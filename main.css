@@ -1,0 +1,103 @@
+* #menu {
+    padding: 0;
+    margin: 0;
+}
+
+/**стилизация меню**/
+#menu li {
+    list-style: none;
+    float: left;
+    height: 30px;
+    padding: 0;
+    margin: 0;
+    width: 150px;
+    text-align: center;
+    background: black;
+    position: relative;
+    padding-top: 12px;
+}
+
+/**стилизация текста меню**/
+#menu li a {
+    display: block;
+    width: 150px;
+    height: 30px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/**стилизация віпадающего списка products1 and products2 **/
+#menu li ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 150px;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 42px;
+}
+
+#menu li ul li .second {
+    left: 150px;
+    top: 0;
+}
+
+#menu li ul li {
+    float: none;
+    height: 30px;
+    margin: 0;
+    width: 150px;
+    text-align: center;
+    background: blue;
+
+}
+
+#menu li:hover ul {
+    display: block;
+
+}
+
+#menu li:hover {
+
+    background: blue;
+
+}
+
+#menu li ul li ul {
+    left: 150px;
+    top: 0;
+
+}
+
+#menu li ul li ul li {
+    display: none;
+}
+
+#menu li ul li:hover ul li {
+    display: block;
+
+}
+
+#menu li .col:nth-child(odd) {
+    background: green;
+
+}
+
+#menu li .col:last-of-type {
+    background: purple;
+
+}
+
+.plus:hover>a::after {
+    content: '+';
+    margin-left: 5px;
+
+}
+
+#menu ul li .plus:hover>a:after {
+    content: '+';
+    margin-left: 5px;
+
+}
